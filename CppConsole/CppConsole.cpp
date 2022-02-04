@@ -2,10 +2,25 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
+
+string numberInput()
+{
+    int input;
+    cout << "Enter a number: ";
+    cin >> input;
+    return "Your input is " + to_string(input) + ".";
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    const auto separator = "\n----------------------------\n";
+    cout << "Test C++ console app";
+    cout << separator;
+    cout << numberInput();
+    cout << separator;
+    return 0;
 }
 
 // Spuštění programu: Ctrl+F5 nebo nabídka Ladit > Spustit bez ladění
