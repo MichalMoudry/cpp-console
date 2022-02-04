@@ -141,6 +141,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CppConsole.cpp" />
+    <ClCompile Include="TUI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TUI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

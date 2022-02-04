@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "TUI.h"
 using namespace std;
 
 string numberInput()
@@ -13,12 +14,29 @@ string numberInput()
     return "Your input is " + to_string(input) + ".";
 }
 
+string header(string title)
+{
+    return "\n---------------" + title + "---------------\n";
+}
+
 int main()
 {
+    int userSelection;
     const auto separator = "\n----------------------------\n";
-    cout << "Test C++ console app";
+    cout << header("Test C++ console app");
+    cout << "1. User input";
     cout << separator;
-    cout << numberInput();
+    cout << "Enter your selection: ";
+    cin >> userSelection;
+    cout << separator;
+    switch (userSelection)
+    {
+    case 1:
+        cout << numberInput();
+        break;
+    default:
+        break;
+    }
     cout << separator;
     return 0;
 }
