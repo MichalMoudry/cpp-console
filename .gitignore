@@ -1,7 +1,5 @@
-﻿################################################################################
-# Tento soubor .gitignore byl automaticky vytvořen aplikací Microsoft(R) Visual Studio.
-################################################################################
-
-/CppConsole/.vs/CppConsole/v17
-/CppConsole/x64/Debug
-/CppConsole/.vs/CppConsole
+﻿.vscode
+/src/*.ilk
+/src/*.obj
+/src/*.pdb
+/src/*.exe
